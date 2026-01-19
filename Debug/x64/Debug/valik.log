@@ -1,0 +1,76 @@
+﻿  valik.cpp
+C:\Users\Григорий\source\repos\valik\valik\valik.cpp(41,66): warning C4244: аргумент: преобразование "int" в "float", возможна потеря данных
+C:\Users\Григорий\source\repos\valik\valik\valik.cpp(41,47): warning C4244: аргумент: преобразование "int" в "float", возможна потеря данных
+C:\Users\Григорий\source\repos\valik\valik\valik.cpp(74,66): warning C4244: аргумент: преобразование "int" в "float", возможна потеря данных
+C:\Users\Григорий\source\repos\valik\valik\valik.cpp(74,47): warning C4244: аргумент: преобразование "int" в "float", возможна потеря данных
+C:\Users\Григорий\source\repos\valik\valik\valik.cpp(165,127): warning C4244: аргумент: преобразование "T" в "T", возможна потеря данных
+          with
+          [
+              T=int
+          ]
+          and
+          [
+              T=float
+          ]
+C:\Users\Григорий\source\repos\valik\valik\valik.cpp(165,93): warning C4244: аргумент: преобразование "T" в "T", возможна потеря данных
+          with
+          [
+              T=int
+          ]
+          and
+          [
+              T=float
+          ]
+C:\Users\Григорий\source\repos\valik\valik\valik.cpp(170,134): warning C4244: аргумент: преобразование "T" в "T", возможна потеря данных
+          with
+          [
+              T=int
+          ]
+          and
+          [
+              T=float
+          ]
+C:\Users\Григорий\source\repos\valik\valik\valik.cpp(170,100): warning C4244: аргумент: преобразование "T" в "T", возможна потеря данных
+          with
+          [
+              T=int
+          ]
+          and
+          [
+              T=float
+          ]
+C:\Users\Григорий\source\repos\valik\valik\valik.cpp(175,132): warning C4244: аргумент: преобразование "T" в "T", возможна потеря данных
+          with
+          [
+              T=int
+          ]
+          and
+          [
+              T=float
+          ]
+C:\Users\Григорий\source\repos\valik\valik\valik.cpp(175,98): warning C4244: аргумент: преобразование "T" в "T", возможна потеря данных
+          with
+          [
+              T=int
+          ]
+          and
+          [
+              T=float
+          ]
+C:\Users\Григорий\source\repos\valik\valik\valik.cpp(205,29): warning C4244: инициализация: преобразование "double" в "int", возможна потеря данных
+C:\Users\Григорий\source\repos\valik\valik\valik.cpp(218,27): warning C4244: инициализация: преобразование "double" в "float", возможна потеря данных
+C:\Users\Григорий\source\repos\valik\valik\valik.cpp(245,56): warning C4244: аргумент: преобразование "int" в "T", возможна потеря данных
+          with
+          [
+              T=float
+          ]
+C:\Users\Григорий\source\repos\valik\valik\valik.cpp(245,53): warning C4244: аргумент: преобразование "int" в "T", возможна потеря данных
+          with
+          [
+              T=float
+          ]
+C:\Users\Григорий\source\repos\valik\valik\valik.cpp(248,70): warning C4244: аргумент: преобразование "int" в "float", возможна потеря данных
+C:\Users\Григорий\source\repos\valik\valik\valik.cpp(248,51): warning C4244: аргумент: преобразование "int" в "float", возможна потеря данных
+C:\Users\Григорий\source\repos\valik\valik\valik.cpp(249,60): warning C4244: аргумент: преобразование "int" в "float", возможна потеря данных
+C:\Users\Григорий\source\repos\valik\valik\valik.cpp(249,43): warning C4244: аргумент: преобразование "int" в "float", возможна потеря данных
+  valik.vcxproj -> C:\Users\Григорий\source\repos\valik\x64\Debug\valik.exe
