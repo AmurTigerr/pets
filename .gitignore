@@ -416,3 +416,22 @@ FodyWeavers.xsd
 *.msix
 *.msm
 *.msp
+
+# ELAN TECH Python application
+__pycache__/
+*.pyc
+*.db
+*.db-*
+*.sqlite
+*.sqlite3
+generated/
+.env
+.env.*
+!.env.example
+.venv/
+venv/
+.DS_Store
+.idea/
+.vscode/
+.codex/
+*.log
