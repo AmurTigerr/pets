@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ELAN TECH</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=Unbounded:wght@500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/styles.css" />
+    <script src="/script.js" defer></script>
+  </head>
+  <body class="favorites-page" data-page="favorites">
+    <div class="page-shell">
+      <header class="cabinet-header">
+        <nav class="topbar">
+          <a class="brand" href="/" aria-label="ELAN TECH — перейти на главную">
+            <span class="brand-mark">É</span>
+            <div>
+              <h1>ELAN TECH</h1>
+            </div>
+          </a>
+          <div class="topbar-actions">
+            <a href="/cabinet" class="ghost-link">Личный кабинет</a>
+            <button class="primary-link topbar-button hidden" id="logout-button" type="button">
+              Выйти
+            </button>
+          </div>
+        </nav>
+
+        <section class="cabinet-intro">
+          <div class="section-heading compact">
+            <h2>Избранное</h2>
+          </div>
+          <div class="cabinet-summary">
+            <div class="summary-card">
+              <p class="card-label">Сохранено</p>
+              <h3 id="favorites-count">0 образов</h3>
+              <p>Здесь собраны все образы, которые вы отметили в подборке.</p>
+            </div>
+          </div>
+        </section>
+      </header>
+
+      <main class="cabinet-main">
+        <section class="section looks-section" id="favorites">
+          <div class="looks-header">
+            <div>
+              <p class="eyebrow">Избранное</p>
+              <h3>Сохранённые образы пользователя</h3>
+            </div>
+            <span class="looks-counter" id="favorites-counter">0 образов</span>
+          </div>
+          <div class="looks-grid favorites-grid" id="favorites-grid">
+            <article class="look-card placeholder compact-placeholder">
+              <button class="save-button static" type="button">Здесь появятся сохранённые образы</button>
+            </article>
+          </div>
+        </section>
+      </main>
+    </div>
+  </body>
+</html>

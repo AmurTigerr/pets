@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ELAN TECH</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=Unbounded:wght@500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/styles.css" />
+    <script src="/script.js" defer></script>
+  </head>
+  <body class="auth-page" data-page="auth">
+    <div class="page-shell">
+      <header class="cabinet-header">
+        <nav class="topbar">
+          <a class="brand" href="/" aria-label="ELAN TECH — перейти на главную">
+            <span class="brand-mark">É</span>
+            <div>
+              <h1>ELAN TECH</h1>
+            </div>
+          </a>
+          <div class="topbar-actions">
+            <a href="/cabinet" class="ghost-link">Личный кабинет</a>
+          </div>
+        </nav>
+
+        <section class="cabinet-intro auth-intro">
+          <div class="section-heading compact">
+            <h2>Вход и регистрация</h2>
+          </div>
+        </section>
+      </header>
+
+      <main>
+        <section class="section auth-section standalone-auth">
+          <div class="auth-grid">
+            <aside class="auth-promo">
+              <p>[ личный кабинет ]</p>
+              <h2>Сохраним <em>ваши параметры</em></h2>
+              <span>Анкета и избранные образы будут ждать вас в личном кабинете — не придётся заполнять всё заново.</span>
+            </aside>
+            <div class="auth-card auth-shell">
+              <div class="window-bar">
+                <span></span><span></span><span></span>
+              </div>
+              <div class="auth-card-heading">
+                <h2>Добро пожаловать</h2>
+                <p>Зарегистрируйтесь, чтобы сохранить индивидуальные настройки размеров.</p>
+              </div>
+              <div class="auth-tabs">
+                <button class="tab-button active" type="button" data-auth-tab="register">
+                  Регистрация
+                </button>
+                <button class="tab-button" type="button" data-auth-tab="login">
+                  Вход
+                </button>
+              </div>
+
+              <form class="auth-form-panel" id="login-form">
+                <h3>Войти в кабинет</h3>
+                <p class="auth-text">
+                  После входа вы попадёте в личный кабинет с анкетой, результатами
+                  генерации и сохранённым избранным.
+                </p>
+                <label>
+                  <span>Email</span>
+                  <input name="email" type="email" placeholder="yourname@example.com" required />
+                </label>
+                <label>
+                  <span>Пароль</span>
+                  <input name="password" type="password" placeholder="Минимум 6 символов" minlength="6" required />
+                </label>
+                <a href="/forgot-password" class="inline-link">Забыли пароль?</a>
+                <button class="cta-button wide" type="submit">Войти</button>
+              </form>
+
+              <form class="auth-form-panel active" id="register-form">
+                <h3>Создать аккаунт</h3>
+                <p class="auth-text">
+                  После регистрации сразу откроется кабинет, где можно пройти
+                  анкету и получить 10 персональных образов.
+                </p>
+                <label>
+                  <span>Email</span>
+                  <input name="email" type="email" placeholder="yourname@example.com" required />
+                </label>
+                <label>
+                  <span>Пароль</span>
+                  <input name="password" type="password" placeholder="Минимум 6 символов" minlength="6" required />
+                </label>
+                <label>
+                  <span>Повторите пароль</span>
+                  <input
+                    name="password_repeat"
+                    type="password"
+                    placeholder="Повторите пароль"
+                    minlength="6"
+                    required
+                  />
+                </label>
+                <label class="consent-checkbox">
+                  <input name="privacy_consent" type="checkbox" required />
+                  <span>
+                    Я ознакомился(ась) с
+                    <a href="/privacy-policy" class="inline-link" data-open-policy>
+                      Политикой конфиденциальности и обработки персональных данных
+                    </a>
+                    и даю согласие на обработку персональных данных, а также на передачу
+                    данным сервисам, необходимым для работы сайта.
+                  </span>
+                </label>
+                <p class="form-note">
+                  Согласие оформляется отдельно от регистрации и хранится в журнале согласий.
+                </p>
+                <button class="cta-button wide" type="submit">Зарегистрироваться</button>
+              </form>
+              <p class="form-message" id="auth-message" aria-live="polite"></p>
+              <div class="legal-links">
+                <a href="/privacy-policy" data-open-policy>Политика конфиденциальности</a>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ELAN TECH</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=Unbounded:wght@500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/styles.css" />
+    <script src="/script.js" defer></script>
+  </head>
+  <body class="cabinet-page" data-page="cabinet">
+    <div class="page-shell">
+      <header class="cabinet-header">
+        <nav class="topbar">
+          <a class="brand" href="/" aria-label="ELAN TECH — перейти на главную">
+            <span class="brand-mark">É</span>
+            <div>
+              <h1>ELAN TECH</h1>
+            </div>
+          </a>
+          <div class="topbar-actions"></div>
+        </nav>
+
+        <section class="cabinet-intro">
+          <div class="cabinet-hero">
+            <div>
+              <p class="eyebrow-pill">Личный кабинет</p>
+              <h2>Личный <em>кабинет</em></h2>
+            </div>
+            <p>Ваша анкета, избранное и подборки — в одном месте</p>
+          </div>
+
+          <div class="cabinet-account">
+            <div class="account-avatar" id="account-initial">E</div>
+            <div class="account-copy">
+              <span>Вы вошли как</span>
+              <strong id="account-email">Загрузка...</strong>
+              <p>Анкета и избранные образы сохраняются в этом аккаунте.</p>
+            </div>
+            <button class="primary-link account-logout hidden" id="logout-button" type="button">
+              Выйти ↗
+            </button>
+          </div>
+
+          <div class="cabinet-dashboard">
+            <article class="summary-card questionnaire-tile">
+              <div class="tile-topline">
+                <p class="card-label">Анкета</p>
+                <span id="questionnaire-status">Не заполнена</span>
+              </div>
+              <h3 id="questionnaire-progress">0/12</h3>
+              <p class="questionnaire-filled-caption">параметров заполнено</p>
+              <div class="progress-bars" aria-hidden="true">
+                <span></span>
+                <span></span>
+                <span></span>
+              </div>
+              <div class="progress-captions" aria-hidden="true">
+                <span>Фигура</span>
+                <span>Внешность</span>
+                <span>Повод</span>
+              </div>
+              <p>Изменились повод или параметры? Обновите анкету — подбор пересчитается.</p>
+              <a href="/questionnaire" class="cta-button">Пройти анкету →</a>
+            </article>
+
+            <article class="summary-card favorites-tile">
+              <div class="tile-topline">
+                <p class="card-label">Избранное</p>
+                <a href="/favorites">Все →</a>
+              </div>
+              <h3><span id="favorites-count">0 образов</span> <em>в избранном</em></h3>
+              <div class="cabinet-favorites-preview" id="cabinet-favorites-preview"></div>
+              <p>Избранные образы сохраняются в аккаунте и доступны после повторного входа.</p>
+            </article>
+          </div>
+
+          <article class="latest-selection">
+            <div>
+              <p class="eyebrow-pill">Последняя подборка</p>
+              <h3>Последняя <em>подборка</em></h3>
+              <span id="latest-look-meta">10 образов · подбор</span>
+            </div>
+            <div class="latest-look-strip" id="latest-look-strip"></div>
+            <a href="/questionnaire#looks" class="cta-button">Смотреть →</a>
+          </article>
+        </section>
+      </header>
+    </div>
+  </body>
+</html>

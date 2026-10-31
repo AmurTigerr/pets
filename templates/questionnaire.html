@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ELAN TECH</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=Unbounded:wght@500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/styles.css" />
+    <script src="/script.js" defer></script>
+  </head>
+  <body class="questionnaire-page" data-page="questionnaire">
+    <div class="page-shell">
+      <header class="cabinet-header">
+        <nav class="topbar">
+          <a class="brand" href="/" aria-label="ELAN TECH — перейти на главную">
+            <span class="brand-mark">É</span>
+            <div>
+              <h1>ELAN TECH</h1>
+            </div>
+          </a>
+          <div class="topbar-actions">
+            <a href="/cabinet" class="ghost-link">Личный кабинет</a>
+            <button class="primary-link topbar-button hidden" id="logout-button" type="button">
+              Выйти
+            </button>
+          </div>
+        </nav>
+      </header>
+
+      <main class="cabinet-main">
+        <section class="section showcase" id="questionnaire">
+          <div class="section-heading compact">
+            <h2>АНКЕТА</h2>
+          </div>
+
+          <div class="showcase-grid cabinet-layout">
+            <form class="questionnaire-card" id="style-form">
+              <div class="window-bar">
+                <span></span><span></span><span></span>
+              </div>
+              <h3>Персональная анкета</h3>
+              <div class="question-list editorial-question-list">
+                <section class="quiz-block">
+                  <div class="quiz-block-title">
+                    <small>Блок 1</small>
+                    <h3>Фигура <em>и размеры</em></h3>
+                  </div>
+                  <div class="quiz-fields">
+                    <label>
+                      <span>Пол</span>
+                      <select name="gender" required>
+                        <option value="">Выберите</option>
+                        <option value="Женский">Женский</option>
+                        <option value="Мужской">Мужской</option>
+                      </select>
+                    </label>
+                    <label>
+                      <span>Рост</span>
+                      <input name="height" type="number" min="140" max="220" step="1" placeholder="175" required />
+                    </label>
+                    <label>
+                      <span>Вес</span>
+                      <input name="weight" type="number" min="35" max="220" step="1" placeholder="68" required />
+                    </label>
+                    <label>
+                      <span>Возраст</span>
+                      <input name="age" type="number" min="14" max="100" step="1" placeholder="28" required />
+                    </label>
+                    <label>
+                      <span>Обхват груди</span>
+                      <input name="bust" type="number" min="60" max="150" step="1" placeholder="90" required />
+                    </label>
+                    <label>
+                      <span>Обхват талии</span>
+                      <input name="waist" type="number" min="45" max="140" step="1" placeholder="65" required />
+                    </label>
+                    <label>
+                      <span>Обхват бёдер</span>
+                      <input name="hips" type="number" min="60" max="160" step="1" placeholder="95" required />
+                    </label>
+                    <label>
+                      <span>Форма тела</span>
+                      <select name="body_shape" required>
+                        <option value="">Выберите</option>
+                        <option value="Жилистое худое">Жилистое худое</option>
+                        <option value="Симметричное пропорциональное">Симметричное пропорциональное</option>
+                        <option value="Округлое пышное">Округлое пышное</option>
+                        <option value="Спортивное мускулинное">Спортивное мускулинное</option>
+                      </select>
+                    </label>
+                    <label>
+                      <span>Длина конечностей относительно тела</span>
+                      <select name="limb_length" required>
+                        <option value="">Выберите</option>
+                        <option value="Длинные">Длинные</option>
+                        <option value="Пропорциональные">Пропорциональные</option>
+                        <option value="Коротковатые">Коротковатые</option>
+                      </select>
+                    </label>
+                  </div>
+                </section>
+
+                <section class="quiz-block">
+                  <div class="quiz-block-title">
+                    <small>Блок 2</small>
+                    <h3>Внешность <em>и цветотип</em></h3>
+                  </div>
+                  <div class="quiz-fields">
+                    <label>
+                      <span>Скулы</span>
+                      <select name="cheekbones" required>
+                        <option value="">Выберите</option>
+                        <option value="Ярко выраженные подтянутые">Ярко выраженные подтянутые</option>
+                        <option value="Мягкие">Мягкие</option>
+                        <option value="Невыраженные">Невыраженные</option>
+                      </select>
+                    </label>
+                    <label>
+                      <span>Размер губ</span>
+                      <select name="lip_size" required>
+                        <option value="">Выберите</option>
+                        <option value="Узкие">Узкие</option>
+                        <option value="Средние">Средние</option>
+                        <option value="Пухлые">Пухлые</option>
+                      </select>
+                    </label>
+                    <label>
+                      <span>Структура волос</span>
+                      <select name="hair_texture" required>
+                        <option value="">Выберите</option>
+                        <option value="Прямые">Прямые</option>
+                        <option value="Волнистые">Волнистые</option>
+                        <option value="Кудрявые">Кудрявые</option>
+                      </select>
+                    </label>
+                    <label>
+                      <span>Цвет глаз</span>
+                      <select name="eyes" required>
+                        <option value="">Выберите</option>
+                        <option value="Карие">Карие</option>
+                        <option value="Голубые">Голубые</option>
+                        <option value="Зеленые">Зеленые</option>
+                        <option value="Серые">Серые</option>
+                      </select>
+                    </label>
+                    <label>
+                      <span>Цвет волос</span>
+                      <select name="hair" required>
+                        <option value="">Выберите</option>
+                        <option value="Темные">Темные</option>
+                        <option value="Русые">Русые</option>
+                        <option value="Светлые">Светлые</option>
+                        <option value="Рыжие">Рыжие</option>
+                      </select>
+                    </label>
+                    <label>
+                      <span>Цвет кожи</span>
+                      <select name="skin" required>
+                        <option value="">Выберите</option>
+                        <option value="Светлый">Светлый</option>
+                        <option value="Средний">Средний</option>
+                        <option value="Теплый">Теплый</option>
+                        <option value="Оливковый">Оливковый</option>
+                        <option value="Темный">Темный</option>
+                      </select>
+                    </label>
+                  </div>
+                </section>
+
+                <section class="quiz-block">
+                  <div class="quiz-block-title">
+                    <small>Блок 3</small>
+                    <h3>Повод <em>и палитра</em></h3>
+                  </div>
+                  <div class="quiz-fields two">
+                    <label>
+                      <span>Тип мероприятия</span>
+                      <input
+                        name="event"
+                        type="text"
+                        placeholder="Например: свидание, прогулка, свадьба"
+                        maxlength="160"
+                        required
+                      />
+                    </label>
+                    <label>
+                      <span>Любимая палитра</span>
+                      <input
+                        name="preferred_colors"
+                        type="text"
+                        placeholder="Например: лавандовый, черный, молочный"
+                        maxlength="120"
+                        required
+                      />
+                    </label>
+                    <label class="wide-field">
+                      <span>Дополнительные предпочтения</span>
+                      <textarea
+                        name="extra_preferences"
+                        rows="4"
+                        placeholder="Например: без ярких принтов, нужна удобная обувь"
+                        maxlength="600"
+                      ></textarea>
+                    </label>
+                  </div>
+                </section>
+              </div>
+              <button class="cta-button wide" type="submit">Получить 10 образов</button>
+              <p class="form-message" id="style-message" aria-live="polite"></p>
+            </form>
+          </div>
+        </section>
+
+        <section class="section looks-section" id="looks">
+          <div class="looks-header">
+            <div>
+              <p class="eyebrow">Результаты</p>
+              <h3>Персональные варианты образов</h3>
+            </div>
+            <span class="looks-counter" id="looks-counter">0 в избранном</span>
+          </div>
+          <div class="looks-grid" id="looks-grid">
+          </div>
+        </section>
+
+        <section class="section looks-section" id="favorites">
+          <div class="looks-header">
+            <div>
+              <p class="eyebrow">Избранное</p>
+              <h3>Сохранённые образы пользователя</h3>
+            </div>
+            <span class="looks-counter" id="favorites-counter">0 образов</span>
+          </div>
+          <div class="looks-grid favorites-grid" id="favorites-grid">
+          </div>
+        </section>
+      </main>
+    </div>
+  </body>
+</html>

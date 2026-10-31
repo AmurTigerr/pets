@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>{{ look.title }} | ELAN TECH</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=Unbounded:wght@500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/styles.css" />
+    <script src="/script.js" defer></script>
+  </head>
+  <body class="look-detail-page" data-page="look-detail">
+    <div class="page-shell">
+      <header class="cabinet-header">
+        <nav class="topbar">
+          <a class="brand" href="/" aria-label="ELAN TECH — перейти на главную">
+            <span class="brand-mark">É</span>
+            <div>
+              <h1>ELAN TECH</h1>
+            </div>
+          </a>
+          <div class="topbar-actions">
+            <a href="/cabinet" class="ghost-link">Личный кабинет</a>
+          </div>
+        </nav>
+      </header>
+
+      <main class="look-detail">
+        <section class="look-detail__image">
+          <img src="{{ look.image }}" alt="{{ look.title }}" />
+          <div class="look-detail__links">
+            <a href="/questionnaire">← Назад к образам</a>
+            {% if look.is_favorite %}
+            <span>♡ Сохранено в избранном</span>
+            {% else %}
+            <span>♡ Можно сохранить из каталога</span>
+            {% endif %}
+          </div>
+        </section>
+
+        <section class="look-detail__content">
+          <p class="look-detail__kicker">Look profile</p>
+          <h2>{{ look.title }}</h2>
+
+          <div class="look-detail__block">
+            <h3>Почему подходит</h3>
+            <p>{{ look.reason }}</p>
+          </div>
+
+          <div class="look-detail__block">
+            <h3>Состав образа</h3>
+            <div class="look-detail__row">
+              <strong>Сценарий и палитра</strong>
+              <span>{{ look.meta }}</span>
+            </div>
+            <div class="look-detail__row">
+              <strong>Профиль посадки</strong>
+              <span>{{ look.profile_note }}</span>
+            </div>
+            <div class="look-detail__row">
+              <strong>Направление</strong>
+              <span>{{ look.vibe }}</span>
+            </div>
+          </div>
+
+          <div class="look-detail__block">
+            <h3>Стилистическая заметка</h3>
+            <p>{{ look.note }}</p>
+          </div>
+        </section>
+      </main>
+    </div>
+  </body>
+</html>
